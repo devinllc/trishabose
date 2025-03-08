@@ -50,7 +50,7 @@ header {
 
 .call-button {
     padding: 8px 12px;
-    background-color: #7a16d2;
+    background-color: #7154c5;
     border: none;
     border-radius: 4px;
     color: white;
@@ -58,7 +58,7 @@ header {
 }
 
 .call-button:hover {
-    background-color: #9419e6;
+    background-color: #7154c5;
 }
 
 .search-icon {
@@ -104,6 +104,7 @@ nav ul li a {
     font-family: "Armata", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -118,7 +119,7 @@ nav ul li a::after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #9419e6;
+    background-color: #7154c5;
     transition: width 0.3s ease-in-out;
 }
 
@@ -205,7 +206,7 @@ nav ul li a.active::after {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    background-color: #9419e6;
+    background-color: #7154c5;
     color: white;
     border: none;
     cursor: pointer;
@@ -260,7 +261,7 @@ nav ul li a.active::after {
 
 
 .progalleriessss h1 {
-    color: #9419e6;
+    color: #7154c5;
 }
 
 .project-section {
@@ -295,7 +296,7 @@ nav ul li a.active::after {
 .project-card h3 {
     font-size: 24px;
     padding: 20px;
-    color: #9419e6;
+    color: #7154c5;
 }
 
 .project-card p {
@@ -355,8 +356,70 @@ nav ul li a.active::after {
     }
 }
 
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
-/* bioooooo */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-content,
+#caption {
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Caption for modal images */
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Bio Section Styles */
 .bio-section {
     padding: 50px 20px;
@@ -370,17 +433,20 @@ nav ul li a.active::after {
 /* Divider Styles */
 .divider {
     height: 2px;
-    background-color: #9419e6;
+    background-color: #ffffff;
     margin: 20px 0;
     width: 100%;
 }
 
 .bio-container {
+    margin-top: 60px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     max-width: 1200px;
     width: 100%;
+    height: 100%;
     gap: 50px;
 }
 
@@ -404,7 +470,7 @@ nav ul li a.active::after {
     font-family: "Armata", sans-serif;
     font-size: 36px;
     margin-bottom: 10px;
-    color: #9419e6;
+    color: #7154c5;
 }
 
 .bio-content h2 {
@@ -418,7 +484,63 @@ nav ul li a.active::after {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
     color: #b7b1b1;
+}
+
+/* bioooooo */
+.bio-card {
+    width: 500px;
+    height: 550px;
+    background: url('assets/500x500trisha/11.png') no-repeat center center/cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.bio-contents {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bio-contents h2 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.bio-contents p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bio-contents p span {
+    font-weight: bold;
+    color: #7154c5;
+}
+
+.manager-info {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.manager-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.manager-info p span {
+    color: #7154c5;
+    font-weight: bold;
 }
 
 /* Responsive Adjustments */
@@ -465,9 +587,122 @@ nav ul li a.active::after {
 
 
 
+/* TESTIMONIALSSSSSSSSSS */
+.testimonials-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.testimonial-card {
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-dp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 24px;
+    color: #7154c5;
+    margin-bottom: 0;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 75px;
+    /* Indentation to create the "message" look */
+    position: relative;
+}
+
+/* Speech bubble effect */
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    /* Position relative to the avatar */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #1e1e1e transparent transparent;
+}
+
+/* Hover effects */
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonial-card h3 {
+        font-size: 20px;
+    }
+
+    .testimonial-card p {
+        font-size: 14px;
+    }
+
+    .testimonial-dp {
+        width: 50px;
+        height: 50px;
+    }
+
+    .testimonial-card::before {
+        left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 20px;
+    }
+
+    .testimonial-card h3 {
+        font-size: 18px;
+    }
+
+    .testimonial-card p {
+        font-size: 12px;
+        padding-left: 60px;
+    }
+
+    .testimonial-dp {
+        width: 40px;
+        height: 40px;
+    }
+
+    .testimonial-card::before {
+        left: 40px;
+    }
+}
+
+
 /* callbackssssss */
 /* General Reset */
 /* Dark Theme and Responsive Section Styling */
+
 .request-callback-section {
     background-color: #000000;
     color: #ffffff;
@@ -492,7 +727,7 @@ nav ul li a.active::after {
 .request-callback-container h1 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #9419e6;
+    color: #7154c5;
 }
 
 .request-callback-container p {
@@ -511,10 +746,11 @@ nav ul li a.active::after {
     font-size: 14px;
     margin-bottom: 5px;
     text-align: start;
-    color: #9419e6;
+    color: #7154c5;
 }
 
 .request-callback-form input,
+.request-callback-form select,
 .request-callback-form textarea {
     width: 100%;
     padding: 10px;
@@ -526,14 +762,21 @@ nav ul li a.active::after {
     text-align: start;
 }
 
+#category,
+#sub-category {
+    padding: 30px;
+}
+
 .request-callback-form input::placeholder,
+.request-callback-form select::placeholder,
 .request-callback-form textarea::placeholder {
     color: #999;
 }
 
 .request-callback-form input:focus,
+.request-callback-form select:focus,
 .request-callback-form textarea:focus {
-    border-color: #9419e6;
+    border-color: #7154c5;
     outline: none;
 }
 
@@ -548,7 +791,7 @@ nav ul li a.active::after {
 }
 
 .submit-btn {
-    background-color: #9419e6;
+    background-color: #7154c5;
     color: #1e1e1e;
     padding: 12px 20px;
     font-size: 16px;
@@ -560,7 +803,7 @@ nav ul li a.active::after {
 }
 
 .submit-btn:hover {
-    background-color: #9419e6;
+    background-color: #7154c5;
 }
 
 /* Responsive Adjustments */
@@ -597,6 +840,7 @@ nav ul li a.active::after {
     }
 
     .request-callback-form input,
+    .request-callback-form select,
     .request-callback-form textarea {
         font-size: 12px;
     }
@@ -622,7 +866,7 @@ nav ul li a.active::after {
 }
 
 .footer-section h2 {
-    color: #9419e6;
+    color: #7154c5;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -644,7 +888,7 @@ nav ul li a.active::after {
 }
 
 .footer-section ul li a:hover {
-    color: #9419e6;
+    color: #7154c5;
 }
 
 .footer-content {
@@ -695,7 +939,7 @@ nav ul li a.active::after {
 }
 
 .bottom-left-social a:hover {
-    color: #9419e6;
+    color: #7154c5;
 }
 
 /* Bottom-right info */
@@ -706,6 +950,10 @@ nav ul li a.active::after {
     /* Align it properly at the bottom */
     color: #fff;
     font-size: 14px;
+}
+
+.about-footer {
+    gap: -20px;
 }
 
 .bottomsssss {
