@@ -4,7 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trisha Bose Protfolio</title>
+    <title>Trisha Bose - Model, Actor & Influencer Portfolio</title>
+    <meta name="description"
+        content="Official portfolio of Trisha Bose - a versatile model, actor, and influencer based in Mumbai. View gallery, testimonials, and booking information.">
+    <meta name="keywords"
+        content="Trisha Bose, model, actor, influencer, portfolio, Mumbai, fashion, photoshoot, booking">
+    <meta name="author" content="Ramesh Vishwakarma - www.Udevs.me">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Trisha Bose - Model, Actor & Influencer Portfolio">
+    <meta property="og:description"
+        content="Official portfolio of Trisha Bose - a versatile model, actor, and influencer based in Mumbai.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trishabose.com">
+    <!-- Add your og:image when available -->
+    <!-- <meta property="og:image" content="https://trishabose.com/assets/imgs/og-image.jpg"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,61 +27,68 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add custom styles for uppercase navigation */
+        #navMenu ul li a {
+            text-transform: uppercase;
+        }
+    </style>
 </head>
-
 <body>
+    <!-- Loading Animation -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+
     <header>
         <div class="logo">
             <img src="assets/imgs/TRISHA BOSE.gif" alt="Logo">
         </div>
-        <div class="right-section">
-            <!-- <input type="text" placeholder="Search..." class="search-input"> -->
-            <!-- <button class="call-button">Request a Call</button> -->
-            <i class="fas fa-search search-icon"></i>
-        </div>
     </header>
+
     <!-- Hamburger Menu Icon -->
-    <div class="hamburger" id="hamburger">
+    <div class="hamburger" id="hamburger" aria-label="Menu" role="button" aria-expanded="false" aria-controls="navMenu">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
     <!-- Navigation Bar -->
-    <nav id="navMenu">
+    <nav id="navMenu" aria-label="Main Navigation">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="#bioss">Bio</a></li>
-            <li><a href="#progalleriessss">Gallery</a></li>
-            <li><a href="#testimonials">Testimonial</a></li>
-            <li><a href="#">Booking</a></li>
-            <li><a href="#">Career Graph</a></li>
-            <li><a href="#contactssss">Contact Us</a></li>
-
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/videos.html" target="_blank">Videos</a></li>
+            <li><a href="pages/news.html">News & Media</a></li>
+            <li><a href="pages/testimonial.html">Testimonials</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <!-- <li><a href="#">Career Graph</a></li> -->
+            <li><a href="#contactssss">Contact</a></li>
         </ul>
     </nav>
 
     <div id="uniqueCarousel" class="carousel-container">
         <div class="carousel-slide ">
-            <img src="assets/trishaa album/3.png" alt="Slide 3">
-            <button class="carousel-button">Learn More 3</button>
+            <img src="assets/trishaa album/3.png" alt="Slide 3" loading="lazy">
+            <!-- <button class="carousel-button">Learn More 3</button> -->
         </div>
-        <div class="carousel-slide active ">
-            <img src="assets/trishaa album/9.png" alt="Slide 1">
-            <button class="carousel-button">Learn More 1</button>
-        </div>
-        <div class="carousel-slide ">
-            <img src="assets/trishaa album/2.png" alt="Slide 2">
-            <button class="carousel-button">Learn More 2</button>
+        <div class="carousel-slide  ">
+            <img src="assets/trishaa album/9.png" alt="Slide 1" loading="lazy">
+            <!-- <button class="carousel-button">Learn More 1</button> -->
         </div>
         <div class="carousel-slide ">
-            <img src="assets/trishaa album/4.png" alt="Slide 3">
-            <button class="carousel-button">Learn More 3</button>
+            <img src="assets/trishaa album/2.png" alt="Slide 2" loading="lazy">
+            <!-- <button class="carousel-button">Learn More 2</button> -->
+        </div>
+        <div class="carousel-slide ">
+            <img src="assets/trishaa album/4.png" alt="Slide 3" loading="lazy">
+            <!-- <button class="carousel-button">Learn More 3</button> -->
         </div>
 
-        <div class="carousel-slide ">
-            <img src="assets/trishaa album/5.png" alt="Slide 3">
-            <button class="carousel-button">Learn More 3</button>
+        <div class="carousel-slide active ">
+            <img src="assets/trishaa album/5.png" alt="Slide 3" loading="lazy">
+            <!-- <button class="carousel-button">Learn More 3</button> -->
         </div>
 
         <div class="carousel-nav">
@@ -80,29 +100,37 @@
     <section class="bio-section" id="bioss" data-aos="fade-up">
         <div></div>
         <div></div>
+
         <div class="bio-container">
+
             <!-- Bio Image Section -->
             <div class="bio-image" data-aos="fade-up">
+                <img src="assets/imgs/TRISHA BOSE 2.png" alt="Trisha Bose" loading="lazy">
                 <div class="bio-card" data-aos="fade-up">
-                    <div class="bio-contents" data-aos="fade-up">
-                        <h2>BIO</h2>
-                        <p><span>Born:</span> 22nd Nov</p>
-                        <p><span>Height:</span> 5.5 Inch</p>
-                        <p><span>Vitals:</span> 34 28 35</p>
-                        <p><span>Skin Color:</span> Wheatish</p>
-                        <p><span>Eye Color:</span> Blackish Brown</p>
-                        <p><span>Shoe Size:</span> UK7</p>
-                        <p><span>Dress Size:</span> S/M</p>
-                        <p>Managed By: <span>Imaxx TV Digital Private Limited</span></p>
-                        <p>Talent Manager: <span>Sharad Gupta</span></p>
-                    </div>
                 </div>
+
             </div>
 
             <!-- Bio Content Section -->
             <div class="bio-content" data-aos="fade-up">
+                <!-- <h1>Trisha Bose</h1>
+                <h2>Model | Influencer | Actor</h2> -->
+                <p style="font-size: 50px; color: #ffffff;  margin-top: 150px;">BIO</p>
                 <h1>Trisha Bose</h1>
-                <h2>Model | Influencer | Actor</h2>
+                <p>
+                    Born on 22nd Nov in West Bengal <br>
+                    Height: 5.5 Inch <br>
+                    Vitals: 34 28 35 <br>
+                    Skin Color: Wheatish <br>
+                    Eye Color: Blackish Brown <br>
+                    Shoe Size: UK7 <br>
+                    Dress Size: S/M <br>
+                    Managed By: <span>Imaxx TV Digital Private Limited </span> <br>
+                    Talent Manager: <span>Sharad Gupta</span>
+                </p>
+                <div>
+
+                </div>
                 <p>
                     Trisha Bose is a versatile model, actor, and influencer hailing from Delhi and currently based in
                     Mumbai. Known for her striking presence and engaging personality, she has made a significant mark in
@@ -115,158 +143,129 @@
                     engaging
                     content that resonates with a diverse audience, establishing her as a trendsetter in her field.
                 </p>
+
+                <!-- Social Media Links -->
+                <div class="bio-social-media">
+                    <h3>Connect with Trisha</h3>
+                    <div class="bio-social-icons">
+                        <a href="https://youtu.be/RpNISJH2qHQ?si=QAR6tEvBRacPbZKI" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1AGXPzDiBe/?mibextid=wwXIfr" target="_blank"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/trishaboseofficial?igsh=MWJvMDhvNmo0YzNnYQ%3D%3D&utm_source=qr"
+                            target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <br>
+                <p></p>
+
             </div>
         </div>
     </section>
 
-    <div class="divider"></div>
-    <section class="progalleriessss" id="progalleriessss" data-aos="slide-up">
-        <h1 style="font-size: 60px;color: #7154c5; font-weight: bolder;text-align: center; margin: 30px;">Gallery</h1>
-        <div class="project-section">
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/1.png" alt="Project Image 1" class="project-image"
-                    data-full="assets/trishaa album/1.png">
-                <h3>Project 1</h3>
-                <p>This is the description for project 1.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/2.png" alt="Project Image 111" class="project-image"
-                    data-full="assets/trishaa album/2.png">
-                <h3>Project 2</h3>
-                <p>This is the description for project 2.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/3.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/3.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/4.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/4.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/5.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/5.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/6.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/6.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/7.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/7.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/8.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/8.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
-            </div>
-            <div class="project-card" data-aos="fade-up">
-                <img src="assets/500x500trisha/9.png" alt="Project Image 3" class="project-image"
-                    data-full="assets/trishaa album/9.png">
-                <h3>Project 3</h3>
-                <p>This is the description for project 3.</p>
+    <!-- New Booking Section -->
+    <section class="booking-section" id="booking" data-aos="fade-up">
+        <div class="booking-container">
+            <h1 data-aos="fade-up">Book Trisha Bose</h1>
+            <p data-aos="fade-up">Available for photoshoots, brand collaborations, events, and more.</p>
+
+            <div class="booking-cards">
+                <div class="booking-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="booking-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Photoshoots</h3>
+                    <p>Professional photoshoots for fashion, lifestyle, and commercial projects.</p>
+                    <ul>
+                        <li>Fashion Editorial</li>
+                        <li>Commercial Campaigns</li>
+                        <li>Product Shoots</li>
+                        <li>Lifestyle Content</li>
+                    </ul>
+                    <a href="#contactssss" class="booking-btn">Book Now</a>
+                </div>
+
+                <div class="booking-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="booking-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Acting Projects</h3>
+                    <p>Acting services for films, commercials, music videos, and digital content.</p>
+                    <ul>
+                        <li>TV Commercials</li>
+                        <li>Music Videos</li>
+                        <li>Short Films</li>
+                        <li>Web Series</li>
+                    </ul>
+                    <a href="#contactssss" class="booking-btn">Book Now</a>
+                </div>
+
+                <div class="booking-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="booking-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>Brand Collaborations</h3>
+                    <p>Influencer marketing and brand endorsements across social media platforms.</p>
+                    <ul>
+                        <li>Social Media Campaigns</li>
+                        <li>Brand Endorsements</li>
+                        <li>Product Promotions</li>
+                        <li>Event Appearances</li>
+                    </ul>
+                    <a href="#contactssss" class="booking-btn">Book Now</a>
+                </div>
             </div>
 
+            <div class="view-all-services" data-aos="fade-up">
+                <a href="pages/services.html" class="view-all-btn">
+                    <span>View All Services</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
 
-            <!-- Repeat similar blocks for each project -->
+            <div class="booking-process" data-aos="fade-up">
+                <h2>Booking Process</h2>
+                <div class="process-steps">
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="step-number">1</div>
+                        <h4>Submit Inquiry</h4>
+                        <p>Fill out the contact form with your project details and requirements.</p>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="step-number">2</div>
+                        <h4>Schedule Call</h4>
+                        <p>We'll review your inquiry and arrange a consultation call to discuss details.</p>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="step-number">3</div>
+                        <h4>Discuss Proposal</h4>
+                        <p>We'll present a customized proposal with pricing options and availability.</p>
+                    </div>
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="step-number">4</div>
+                        <h4>Pay Advance</h4>
+                        <p>Secure your booking date by paying the advance fee and signing the contract.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <div id="testimonials">
-
-
-        <h1 style="font-size: 60px;color: #7154c5; font-weight: bolder;text-align: center; margin: 30px;">Testimonials
-        </h1>
-        <section class="testimonials-section">
-
-            <div class="testimonial-card" data-aos="fade-up">
-                <div class="testimonial-header">
-                    <img src="assets/500x500trisha/16.png" alt="Alicia DP" class="testimonial-dp">
-                    <h3>Alicia</h3>
-                </div>
-                <p>Embarking on a voyage that took Alicia from diverse corners of the world to the enchanting heart of
-                    India
-                    has been nothing short of a transformative journey. This land of rich cultures and traditions has
-                    not
-                    only embraced her but also become the canvas on which Alicia’s modeling story has flourished.</p>
-            </div>
-
-            <div class="testimonial-card" data-aos="fade-up">
-                <div class="testimonial-header">
-                    <img src="assets/500x500trisha/15.png" alt="Namita DP" class="testimonial-dp">
-                    <h3>Namita</h3>
-                </div>
-                <p>Witness the captivating transformation of a young talent into a shining star! 🌟✨</p>
-                <p>In this exclusive testimonial video, we proudly present the incredible journey of Namita, who
-                    embarked on
-                    her modeling odyssey with Auraa Talents. From the moment she joined us as a fresh face, her story
-                    unfolded like a fairytale.</p>
-            </div>
-
-            <div class="testimonial-card" data-aos="fade-up">
-                <div class="testimonial-header">
-                    <img src="assets/500x500trisha/14.png" alt="Rodrigo DP" class="testimonial-dp">
-                    <h3>Rodrigo</h3>
-                </div>
-                <p>Here we are again with the super charming @franckrodrigo_ on the hot seat this time, talking about
-                    his
-                    perspective on Auraa, his life journey so far, and his work experience!</p>
-                <p>We’re glad to represent @franckrodrigo_ with us ✨</p>
-            </div>
-
-            <div class="testimonial-card" data-aos="fade-up">
-                <div class="testimonial-header">
-                    <img src="assets/500x500trisha/13.png" alt="Gabi DP" class="testimonial-dp">
-                    <h3>Gabi</h3>
-                </div>
-                <p>A tale of growth and discovery of true potential! Step into the world of Gabi’s heartfelt testimonial
-                    about her journey in India with Auraa Talents 🤍</p>
-                <p>From celebrating festivals, visiting different cities for shoots, staying with models speaking
-                    different
-                    languages, turning friends into families to immersing herself in the rich tapestry of Indian
-                    culture!
-                </p>
-            </div>
-
-            <div class="testimonial-card" data-aos="fade-up">
-                <div class="testimonial-header">
-                    <img src="assets/500x500trisha/12.png" alt="Tanvi DP" class="testimonial-dp">
-                    <h3>Tanvi</h3>
-                </div>
-                <p>"Modelling is just for pretty faces." "No, it's not." "It's all about potential and hard work," says
-                    Tanvi Bakshi, a dedicated and ambitious personality who shares her journey and experience at Auraa
-                    Talents.</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Modal for full image display -->
-    <div id="imageModal" class="modal">
-        <span class="close">Back</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption"></div>
-    </div>
-
 
     <section class="request-callback-section" id="contactssss" data-aos="slide-up">
         <div class="request-callback-container" data-aos="fade-up">
-            <h1 data-aos="fade-up" data-aos-delay="400">Request A Call Back</h1>
+            <h1 data-aos="fade-up" data-aos-delay="400">Request A Booking</h1>
             <p data-aos="fade-up">
-                Hey! Want to get in touch? We are looking forward to being in contact with you.
+                Ready to work with Trisha Bose? Fill out the form below with your project details.
             </p>
             <p data-aos="fade-up">
-                Our team of experts are always surfacing unheard ideas and encouraging our talents
-                to drive meaningful business for you!
+                Our team will review your request and get back to you within 24-48 hours to discuss your project
+                requirements.
             </p>
             <form class="request-callback-form" data-aos="fade-up">
                 <div class="form-row">
@@ -294,7 +293,7 @@
 
                 <!-- Category Dropdown -->
                 <div class="form-group" data-aos="fade-up">
-                    <label for="category">Category *</label>
+                    <label for="category">Service Category *</label>
                     <select id="category" name="category" onchange="populateSubCategories()" required>
                         <option value="">Select Category</option>
                         <option value="photoshoot">Photoshoot</option>
@@ -305,94 +304,77 @@
 
                 <!-- Sub-Category Dropdown -->
                 <div class="form-group" data-aos="fade-up">
-                    <label for="sub-category">Sub-Category *</label>
+                    <label for="sub-category">Service Type *</label>
                     <select id="sub-category" name="sub-category" required>
-                        <option value="">Select Sub-Category</option>
+                        <option value="">Select Service Type</option>
                     </select>
                 </div>
 
                 <div class="form-group" data-aos="fade-up">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <label for="project-date">Preferred Project Date</label>
+                    <input type="date" id="project-date" name="project-date">
                 </div>
-                <button type="submit" class="submit-btn" data-aos="fade-up">Submit</button>
+
+                <div class="form-group" data-aos="fade-up">
+                    <label for="budget">Budget Range (INR)</label>
+                    <select id="budget" name="budget">
+                        <option value="">Select Budget Range</option>
+                        <option value="under-50k">Under 25,000</option>
+                        <option value="50k-100k">25,000 - 50,000</option>
+                        <option value="100k-200k">50,000 - 1,00,000</option>
+                        <option value="200k-plus">Above 1,00,000</option>
+                    </select>
+                </div>
+
+                <div class="form-group" data-aos="fade-up">
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message"
+                        placeholder="Please describe your project, requirements, and any specific details that would help us understand your needs better."
+                        rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-aos="fade-up">Submit Booking Request</button>
             </form>
         </div>
     </section>
 
-    <footer class="footer-section" data-aos="slide-up">
-        <div class="container">
-            <div class="footer-content" data-aos="fade-up" data-aos-delay="200">
-                <a href="#" class="about-footer" data-aos="fade-up" data-aos-delay="400">
-                    <h2>BIO</h2>
-                    <p>
-                        Born: 22nd Nov <br>
-                        Height: 5.5 Inch <br>
-                        Vitals: 34 28 35 <br>
-                        Skin Color: Wheatish <br>
-                        Eye Color: Blackish Brown <br>
-                        Shoe Size: UK7 <br>
-                        Dress Size: S/M <br>
-                        <p> <br> </p>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Powered by section -->
+            <div class="powered-by">
+                <p>Powered by</p>
+                <img src="assets/imgs/imaxxlogo.jpeg" alt="Imaxx TV Logo" class="footer-logo">
+            </div>
 
-                    </p>
-                </a>
+            <!-- Copyright section -->
+            <div class="copyright">
+                <p><span class="copyright-symbol">&copy;</span><span class="copyright-text">2025 All Rights Reserved.
+                        Trisha Bose</span></p>
+            </div>
 
-                <a href="#" class="services-footer" data-aos="fade-up" data-aos-delay="600">
-                    <h2>MANAGED BY</h2>
-                    <ul>
-                        <!-- <li>Book Models</li>
-                        <li>Book Actors</li>
-                        <li>Casting Services</li>-->
-                        <li>Imaxx TV Digital Private Limited</li>
-                        <p> Talent Manager: Sharad Gupta <br> </p>
-                        <!-- <li>Grooming Services</li>
-                        <li>Consultation and Expert Advice</li>
-                        <li>Professionalism and Excellence</li> -->
-                    </ul>
-                </a>
-
-                <div class="links-footer" data-aos="fade-up" data-aos-delay="800">
-                    <h2>LINKS</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <!-- <li><a href="#">Models</a></li> -->
-                        <!-- <li><a href="#">Cast</a></li> -->
-                        <li><a href="#">News</a></li>
-                        <!-- <li><a href="#">About Us</a></li> -->
-                        <li><a href="#contactssss">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="social-footer" data-aos="fade-up" data-aos-delay="1000">
-                    <h2>SOCIAL</h2>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-
+            <!-- Social Media section with Font Awesome Icons -->
+            <div class="social-media">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1AGXPzDiBe/?mibextid=wwXIfr" target="_blank"
+                        aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/trishaboseofficial?igsh=MWJvMDhvNmo0YzNnYQ%3D%3D&utm_source=qr"
+                        target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://youtu.be/RpNISJH2qHQ?si=QAR6tEvBRacPbZKI" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- <div class="divider"></div> -->
-
-        <!-- Bottom-left Social Icons -->
-        <div class="bottom-left-social">
-            <!-- <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a> -->
-            <a href="https://www.instagram.com" target="_blank">&copy; All rights reserved.</a>
-            <!-- <a href="">
-                <p></p>
-            </a> -->
-        </div>
-
-        <!-- Bottom-right Info -->
-        <div class="bottom-right-info">
-            <!-- <p>by UFDevs</p> -->
-        </div>
-
     </footer>
-
 
     <script>
         let currentSlide = 0;
@@ -439,8 +421,48 @@
     </script>
 
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script>
+        // Get the button
+        let backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Show the button when scrolling down 100px
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the page
+        backToTopBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+    </script>
     <script src="script.js" defer></script> <!-- Add the script file -->
     <!-- <script src="script.js"></script> -->
+
+    <script>
+        // Loading animation
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            setTimeout(function () {
+                loader.classList.add('fade-out');
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>
