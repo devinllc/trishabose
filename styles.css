@@ -193,9 +193,9 @@ nav ul li a.active::after {
     /* Improve bio section for mobile */
     .bio-container {
         flex-direction: column;
-        padding: 20px;
-        margin: 20px auto;
-        gap: 30px;
+        padding: 5px;
+        margin: 0 auto;
+        gap: 20px;
     }
 
     .bio-image {
@@ -204,12 +204,21 @@ nav ul li a.active::after {
 
     .bio-content {
         margin: 0;
-        text-align: center;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .bio-content h1,
+    .bio-content h2,
+    .bio-social-media,
+    .bio-social-media h3 {
+        text-align: left;
     }
 
     .bio-content p {
         font-size: 16px;
         line-height: 1.5;
+        text-align: justify;
     }
 
     /* Improve request callback section for mobile */
@@ -447,6 +456,7 @@ nav ul li a.active::after {
     font-size: 36px;
     margin-bottom: 10px;
     color: #7154c5;
+    text-align: left;
 }
 
 .bio-content h2 {
@@ -454,6 +464,7 @@ nav ul li a.active::after {
     font-size: 24px;
     margin-bottom: 20px;
     color: #ffffff;
+    text-align: left;
 }
 
 .bio-content p {
@@ -467,6 +478,7 @@ nav ul li a.active::after {
 /* Bio Social Media Styles */
 .bio-social-media {
     margin-top: 30px;
+    text-align: left;
 }
 
 .bio-social-media h3 {
@@ -474,6 +486,7 @@ nav ul li a.active::after {
     font-size: 22px;
     margin-bottom: 15px;
     color: #7154c5;
+    text-align: left;
 }
 
 .bio-social-icons {
@@ -516,9 +529,16 @@ nav ul li a.active::after {
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
+    .bio-section {
+        padding: 40px 10px;
+    }
+
     .bio-container {
         flex-direction: column;
         text-align: center;
+        margin: 0;
+        padding: 10px 5px;
+        gap: 30px;
     }
 
     .bio-content h1 {
@@ -548,9 +568,32 @@ nav ul li a.active::after {
         margin-left: 0;
         margin-top: 20px;
     }
+
+    .bio-content {
+        margin: 0;
+        padding: 10px 5px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .bio-content h1,
+    .bio-content h2,
+    .bio-social-media,
+    .bio-social-media h3 {
+        text-align: left;
+    }
 }
 
 @media (max-width: 600px) {
+    .bio-section {
+        padding: 30px 5px;
+    }
+
+    .bio-container {
+        padding: 5px;
+        gap: 20px;
+    }
+
     .bio-content h1 {
         font-size: 24px;
     }
@@ -563,14 +606,22 @@ nav ul li a.active::after {
         font-size: 14px;
     }
 
-    .bio-section {
-        padding: 30px 10px;
-    }
-
     .bio-card {
         width: 100%;
         height: 400px;
         margin-top: 15px;
+    }
+
+    .bio-content {
+        padding: 5px 0;
+        text-align: left;
+    }
+
+    .bio-content h1,
+    .bio-content h2,
+    .bio-social-media,
+    .bio-social-media h3 {
+        text-align: left;
     }
 }
 
